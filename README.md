@@ -13,6 +13,7 @@ Você deverá usar este repositório como o repo principal do projeto, i.e., tod
 ## O Desafio
 O desafio que você irá desenvolver é um de feed de notícias. Com ele podemos acompanhar as notícias mais recentes do Brasil e do mundo.
 O aplicativo deverá funcionar para todos os browser de mercado, em suas versões mais recentes.
+Disponibilizamos um guia para o layout neste [arquivo referencia](https://bit.ly/3ls3dYg), porém, todo o layout é livre.
 
 -------------------------------------------------------------------------------
 ## Regras de negócio
@@ -25,13 +26,13 @@ O aplicativo deverá funcionar para todos os browser de mercado, em suas versõe
 * Grupo de matérias;
 * Anúncios publicitários;
 
-3. O item matéria deve ser exibido no feed com um label, um título, uma descrição e uma imagem de capa opcional. Ao clicar em qualquer lugar do item, o usuário deverá ser redirecionado para a página da matéria.
+3. O item matéria deve ser exibido no feed com um label, um título, uma descrição e uma imagem de capa opcional. Ao clicar em qualquer lugar do item, o usuário deverá ser redirecionado para a página da matéria. O type é desses itens é materia.
 
-4. O item vídeo deve ser exibido no feed com um título, uma descrição e um thumbnail do vídeo. Ao clicar em qualquer lugar do item, o usuário deverá ver o vídeo em uma modal que abre na própria página.
+4. O item vídeo deve ser exibido no feed com um título, uma descrição e um thumbnail do vídeo. Ao clicar em qualquer lugar do item, o usuário deverá ver o vídeo em uma modal que abre na própria página. O type é desses itens é materia.
 
-5. O item grupo de matérias deverá ser exibido no feed com um label, um título e uma sublista de matérias, que terão apenas um título. No momento em que o usuário clica em um dos itens da sublista, ele é levado para a matéria correspondente.
+5. O item agrupador de matérias deverá ser exibido, no desktop, na coluna da direita, com cabeçalho, rodapé e uma sublista de matérias, que terão apenas um título. No momento em que o usuário clica em um dos itens da sublista, ele é levado para a matéria correspondente. No mobile, os itens aparecem na ordem entregue pela api. O type é desses itens é agrupador-materia.
 
-6. O anúncio publicitário deverá aparecer a cada 5 posts de conteúdo exibidos no feed. Um anúncio deve sempre conter um label de anúncio conforme demonstrado aqui. O conteúdo imagético do anúncio pode ser fixo ou gerado aleatoriamente com o uso de bancos de imagem (como, por exemplo, através do site Lorem Picsum: https://picsum.photos/)
+6. O anúncio publicitário deverá aparecer a cada 8 posts de conteúdo exibidos no feed. Um anúncio deve sempre conter um label de anúncio conforme demonstrado aqui. O conteúdo imagético do anúncio pode ser fixo ou gerado aleatoriamente com o uso de bancos de imagem (como, por exemplo, através do site Lorem Picsum: https://picsum.photos/). Como ele é dinâmico, não vem na api.
 
 ------------------------------------------------------------------------------
 ## Api
@@ -44,12 +45,12 @@ Disponibilizamos uma api para você, ela é responsável por trazer os posts já
 
 2. As publicidades, por conta de um acordo comercial, não podem ser colocadas na tela se não puderem ser visualizadas pelo usuário. Elas devem ser carregadas dinamicamente conforme as regras de negócio estabelecidas.
 
-3. O [arquivo referencia](https://bit.ly/3ls3dYg) é um guia para o layout, mas você pode fazer alterações de acordo com o seu senso estético.
+3. Como reforço, o [arquivo referencia](https://bit.ly/3ls3dYg) é um guia para o layout, mas você pode fazer alterações de acordo com o seu senso estético.
 
 ------------------------------------------------------------------------------
 ## Avaliação da solução
 
-1. A linguagem a ser utilizada deve ser JavaScript, HTML 5, CSS. O uso de frameworks é opcional.
+1. As tecnologias a serem utilizadas devem ser JavaScript, HTML 5, CSS. O uso de frameworks é opcional.
 
 2. As funcionalidades listadas anteriormente devem estar presentes na sua solução.
 
