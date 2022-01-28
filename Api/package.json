@@ -1,9 +1,9 @@
 {
-	"name": "be-desafio-feed",
+	"name": "desafio-web",
 	"version": "1.0.0",
-	"description": "Feed API",
+	"description": "Desafio Web",
 	"main": "index.js",
-	"author": "Globo.com",
+	"author": "Globo",
 	"license": "MIT",
 	"dependencies": {
 		"cors": "^2.8.5",
