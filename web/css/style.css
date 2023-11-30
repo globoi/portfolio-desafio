@@ -142,6 +142,7 @@ span.live {
   border: 1px solid #e6e6e6;
   box-shadow: 0 1px 2px rgba(0,0,0,.05);
   padding: 20px;
+  margin-bottom: 20px;
 }
 .newsgroup a {
   font-size: 16px;
@@ -150,7 +151,9 @@ span.live {
   font-family: opensans, opensans-bastian, Arial, sans-serif;
   font-weight: 700;
   color: #c4170c;
+  margin: 0 0 17px 0;
   text-decoration: none;
+  display: block;
 }
 .newsgroup .newsg {
   margin-bottom: 20px;

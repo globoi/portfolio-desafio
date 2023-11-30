@@ -1,5 +1,33 @@
 let numberNews = 0
 
+function groupNews(data){
+
+  for (let i = 0; i < data.length; i++) {
+
+    if (typeof data[i].group !== 'undefined' && data[i].group.length > 0) {
+
+      let divnewsgroup = document.createElement('div')
+      divnewsgroup.classList.add('newsgroup')
+
+      let hGroup = document.createElement('h1')
+      hGroup.innerHTML = data[i].header
+
+      divnewsgroup.appendChild(hGroup);
+
+      for (let e = 0; e < data[i].group.length; e++) {
+        var linkG = document.createElement('a')
+        linkG.href = data[i].group[e].content.url
+        var linkText = document.createTextNode(data[i].group[e].content.title);
+        linkG.appendChild(linkText);
+        divnewsgroup.appendChild(linkG);
+      }
+      
+      const groupnewsr = document.getElementById("groupnewsr");
+      groupnewsr.appendChild(divnewsgroup);
+    }
+  }
+}
+
 function addSourceToVideo(element, src, type) {
   var source = document.createElement('source');
   source.src = src;
@@ -66,7 +94,6 @@ function mountList(data, number){
       divBlocText.classList.add('blctext')
 
       let spanLive = document.createElement('span')
-      //spanLive.classList.add('live')
       spanLive.classList.add('categoryb')
       spanLive.innerHTML = data[i].section
 
@@ -114,16 +141,16 @@ function initPage(data){
   document.getElementById("topLTitle").textContent = data[0].title
   document.getElementById("topLDescription").textContent = data[0].summary
   document.getElementById("firstnews").onclick = function(){
-    location.href = data[0].url;return false;
-  };
+    location.href = data[0].url;return false
+  }
 
   document.getElementById("titlePhoto").textContent = data[1].title
   document.getElementById('imgTopRight').style.backgroundImage = "url("+data[1].image+")"
   document.getElementById("imgTopRight").onclick = function(){
-    location.href = data[1].url;return false;
-  };
+    location.href = data[1].url;return false
+  }
 
-  document.getElementById('imgTopMobile').src = data[1].image;
+  document.getElementById('imgTopMobile').src = data[1].image
   numberNews = 3
   mountList(data, 3)
 }
@@ -131,17 +158,10 @@ function initPage(data){
 
 async function fetchData(pageNumber) {
   let response = await fetch('http://localhost:3000/feed/page/'+pageNumber)
-  //https://projetos.thbastos.com/desafio-globo/json/page1.json
   let data = await response.json()
   initPage(data)
-
-  // let buttonMore = document.createElement('button')
-  // buttonMore.classList.add('morenews')
-  // buttonMore.innerHTML = "Veja mais"
-  // document.getElementById("listNews").appendChild(buttonMore)
+  groupNews(data)
 }
-
-fetchData(1);
 
 async function loadMore(){
 
@@ -150,7 +170,6 @@ async function loadMore(){
   body.dataset.page = pageNumber
 
   let response = await fetch('http://localhost:3000/feed/page/'+pageNumber)
-  //https://projetos.thbastos.com/desafio-globo/json/page1.json
   let data = await response.json()
 
   if(pageNumber<11)
@@ -184,3 +203,5 @@ function closeModal(){
   x.style.transition = "1s opacity";
   setTimeout(function(){x.style.display = "none"}, 500);
 }
+
+fetchData(1)
