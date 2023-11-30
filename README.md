@@ -1,4 +1,4 @@
-# Nome Candidato
+# Thalles Bastos
 **Desafio Desenvolvedor Web - Frontend**
 
 -------------------------------------------------------------------------------
