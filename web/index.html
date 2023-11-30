@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>G1 - Desafio Web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/index.js"></script>
+
+  </head>
+  <body data-page="1">
+    <main>
+      <header>
+        <a class="logo" href="#" onClick="openModal()">
+          <img src="images/logo.svg" alt="G1 Logo"/>
+        </a>
+      </header>
+    </main>
+    <div class="wrapper">
+      <div class="topnews">
+        <div id="firstnews" class="mainnews mleft">
+          <span id="topLChapeu" class="top">Cenário de Destruição</span>
+          <h1 id="topLTitle" class="red">Equipes buscam desaparecidos da explosão que matou mais de 100 e feriu 4 mil no Líbano</h1>
+          <p id="topLDescription" class="maindescription">
+            Suspeita é de que a explosão aconteceu em um depósito de nitrato de amônio, um tipo de fertilizante, na zona portuária de Beirute.
+          </p>
+        </div>
+        <div id="imgTopRight" class="mainnews mright">
+          <h1 id="titlePhoto" class="white">Fotos mostram tamanho da destruição e desespero das vítimas</h1>
+          <img id="imgTopMobile" src="">
+        </div>
+      </div>
+      <div class="middle">
+        <div id="listNews" class="wrapperlist">
+          <!-- <div class="blocknmiddle">
+            <img src="https://picsum.photos/270/152">
+            <div class="blctext">
+              <span class="live">Ao vivo</span>
+              <h2 class="red">GLOBONEWS: assista às últimas notícias e análises</h2>
+              <span class="subtime">Há 5 horas - Em GloboNews</span>
+            </div>
+          </div> -->
+          <button id="bloadmore" class="morenews" onClick="loadMore()">Veja mais</button>
+        </div>
+        <div class="wrappercategories">
+          <div class="newsgroup">
+            <h1>Viu isso aqui?</h1>
+            <div class="newsg">
+              <a href="https://g1.globo.com/pop-arte/musica/circuito-sertanejo/noticia/2023/11/30/sertanejo-perde-espaco-em-2023-mas-continua-dominando-paradas-musicais-do-brasil-veja-rankings.ghtml">
+                Sertanejo perde espaço em 2023, mas continua dominando paradas musicais do Brasil; veja rankings
+              </a>
+            </div>
+            <div class="newsg">
+              <a href="https://g1.globo.com/trabalho-e-carreira/noticia/2023/11/30/13-salario-prazo-de-pagamento-termina-nesta-quinta.ghtml">
+                13º salário: prazo de pagamento em parcela única ou da 1ª parte termina nesta quinta
+              </a>
+            </div>
+            <div class="newsg">
+              <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2023/11/30/meu-pai-matou-minha-mae-filhos-de-4-e-2-anos-viram-momento-que-mulher-foi-morta-a-tiros-enquanto-amamentava-na-baixada-fluminense.ghtml">
+                'Meu pai matou minha mãe': filhos de 4 e 2 anos viram momento que mulher foi morta a tiros enquanto amamentava na Baixada Fluminense
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal">
+      <div id="addvideo" class="wrappervideo"></div>
+      <img onClick="closeModal()" src="./images/close.svg">
+    </div>
+  </body>
+</html>

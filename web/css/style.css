@@ -1,0 +1,355 @@
+body {
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #C4170C;
+  height: 74px;
+  position: relative;
+}
+header img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+h1, h2, p, span {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 40px;
+  letter-spacing: -2.5px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 24px;
+  letter-spacing: -1.25px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.white {
+  color: white;
+}
+.red {
+  color: #C4170C;
+}
+span.top {
+  color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 20px 0 30px 0;
+  display: block;
+}
+.wrapper {
+  width: 944px;
+  margin: 40px auto;
+}
+.mainnews {
+  width: 464px;
+  height: 426px;
+  cursor: pointer;
+}
+.mleft {
+  box-shadow: 2px 3px 3px 2px #c1bdbd;
+  border-radius: 3px;
+  padding: 0 25px;
+  max-height: 426px;
+}
+.mright {
+  background-image: url('https://picsum.photos/464/426');
+  background-size: cover;
+  padding: 0 25px;
+  max-height: 426px;
+  position: relative;
+  background-position: 50% 50%;
+}
+.mright h1 {
+  position: absolute;
+  bottom: 20px;
+  text-shadow: #333333 1px 0 3px;
+}
+.maindescription {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  margin-top: 30px;
+}
+.topnews {
+  display: flex;
+  column-gap: 16px;
+  margin: 40px auto;
+}
+.middle {
+  gap: 16px;
+  display: flex;
+}
+.wrapperlist {
+  width: 70%;
+  position: relative;
+}
+.wrappercategories {
+  width: 30%;
+}
+.blocknmiddle {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd9d9;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+.blocknmiddle:last-child {
+  border-bottom: 0px;
+}
+.blocknmiddle img.news {
+  max-width: 270px;
+}
+.blocknmiddle img.play {
+  position: absolute;
+  bottom: 40px;
+  left: 9px;
+}
+span.subtime {
+  font-size: 12px;
+  line-height: 12px;
+  color: #555555;
+}
+span.live {
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: -0.75px;
+  background-color: #FF0000;
+  color: white;
+  padding: 1px 11px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.blctext h2 {
+  margin: 15px 0 10px 0;
+}
+#imgTopMobile {
+  display: none;
+}
+.subtimemob {
+  display: none;
+}
+.newsgroup {
+  border-radius: var(--glb-fd-item-side-border-radius,4px);
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  padding: 20px;
+}
+.newsgroup a {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  font-family: opensans, opensans-bastian, Arial, sans-serif;
+  font-weight: 700;
+  color: #c4170c;
+  text-decoration: none;
+}
+.newsgroup .newsg {
+  margin-bottom: 20px;
+}
+.newsgroup h1 {
+  font-family: opensans, opensans-bastian, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: rgb(51, 51, 51);
+  line-height: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d5d5;
+  padding: 0 0 15px 0;
+}
+.categoryb {
+  font-size: 16px;
+  letter-spacing: -0.75px;
+  line-height: 20px;
+}
+.morenews {
+  background-color: #C4170C;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 19.5px;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  border-radius: 2px;
+  padding: 11px 0;
+  box-shadow: 0 1px 2px gray;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0px;
+}
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0 0 0 / 81%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#modal h1 {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 0px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.wrappervideo {
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+video {
+  width: 800px;
+  height: 460px;
+}
+#modal img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+.adblock {
+  display: inline-grid;
+  margin: 0 0 30px 0;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ddd9d9;
+  padding-bottom: 30px;
+}
+.adblock img {
+  width: 100%;
+}
+.adspan {
+  background-color: #ECB600;
+  border-radius: 3px;
+  padding: 3px 9px;
+  color: white;
+  width: 60px;
+  margin: 0 0 7px 0px;
+}
+
+@media only screen and (max-width : 970px) {
+  .wrapper {
+    width: 100%;
+  }
+  .topnews {
+    display: block;
+    width: 100%;
+  }
+  .mleft {
+    width: 100%;
+    padding: 20px;
+    max-height: inherit;
+    height: auto;
+    display: table-cell;
+    border-radius: 0px;
+    box-shadow: 0 1px 6px 0px #c1bdbd;
+  }
+  .mright {
+    width: 100%;
+    padding: 0px;
+    margin-top: 30px;
+    background: none !important;
+    height: auto;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wrapperlist {
+    width: 100%;
+  }
+  .blocknmiddle {
+    display: flex;
+    flex-direction: column-reverse;
+    max-height: inherit;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 1px 6px 0px #c1bdbd;
+  }
+  #imgTopMobile{
+    width: 100%;
+    display: table;
+  }
+  h1, h2 {
+    font-size: 20px;
+    letter-spacing: -0.72px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .white {
+    color: #C4170C;
+  }
+  .mright h1 {
+    text-shadow: none;
+    position: relative;
+    margin: 20px 20px 10px;
+    display: inline-table;
+  }
+  span.top {
+    margin: 10px 0 20px 0;
+  }
+  .maindescription {
+    margin-top: 20px;
+  }
+  .blocknmiddle img {
+    width: 100%;
+    max-width: inherit !important;
+  }
+  .blctext {
+    padding: 20px 20px 0;
+  }
+  span.subtime {
+    display: none;
+  }
+  .subtimemob {
+    display: block;
+    margin: 0 20px 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: #555555;
+  }
+  .wrappercategories {
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
+  .morenews {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .blocknmiddle img.play {
+    position: absolute;
+    bottom: 80px;
+    left: 9px;
+    max-width: 5rem !important;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  .wrappervideo {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+  }
+}
