@@ -20,10 +20,10 @@ O desafio que você irá desenvolver é um de feed de notícias. Com ele podemos
 ### Web
 O aplicativo deverá funcionar para todos os browsers de mercado, em suas versões mais recentes.
 
-[Desafio Web](https://github.com/globoi/portfolio-desafio/blob/master/web/README.md)
+[Desafio Web](/web/README.md)
 
 -------------------------------------------------------------------------------
 ### Mobile
 O aplicativo deverá funcionar a partir da SDK 21 para o Android ou a versão 11 de iOS/Swift 5.
 
-[Desafio Mobile](https://github.com/globoi/portfolio-desafio/blob/master/mobile/README.md)
+[Desafio Mobile](/mobile/README.md)
