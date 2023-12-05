@@ -17,10 +17,13 @@ Você deverá usar este repositório como o repo principal do projeto, i.e., tod
 ## O Desafio
 O desafio que você irá desenvolver é um de feed de notícias. Com ele podemos acompanhar as notícias mais recentes do Brasil e do mundo.
 
-**Web**
-O aplicativo deverá funcionar para todos os browser de mercado, em suas versões mais recentes.
+### Web
+O aplicativo deverá funcionar para todos os browsers de mercado, em suas versões mais recentes.
+
 [Desafio Web](https://github.com/globoi/portfolio-desafio/blob/master/web/README.md)
 
-**Mobile**
+-------------------------------------------------------------------------------
+### Mobile
 O aplicativo deverá funcionar a partir da SDK 21 para o Android ou a versão 11 de iOS/Swift 5.
+
 [Desafio Mobile](https://github.com/globoi/portfolio-desafio/blob/master/mobile/README.md)
