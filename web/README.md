@@ -19,7 +19,7 @@ Você deverá usar este repositório como o repo principal do projeto, i.e., tod
 -------------------------------------------------------------------------------
 ## O Desafio
 O desafio que você irá desenvolver é um de feed de notícias. Com ele podemos acompanhar as notícias mais recentes do Brasil e do mundo.
-O aplicativo deverá funcionar para todos os browser de mercado, em suas versões mais recentes.
+O aplicativo deverá funcionar para todos os browsers de mercado, em suas versões mais recentes.
 Disponibilizamos um guia para o layout neste [arquivo referencia](https://bit.ly/3ls3dYg), porém, todo o layout é livre.
 
 -------------------------------------------------------------------------------
