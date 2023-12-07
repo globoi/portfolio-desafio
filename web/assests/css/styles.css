@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import './reset.css';
+
+.logo {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  display: block;
+}
+
+.header {
+  padding: 20px;
+  background: #c4170c;
+}
