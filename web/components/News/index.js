@@ -17,6 +17,104 @@ class News extends HTMLElement {
     document.head.appendChild(font)
   }
 
+  /**
+   * @method createArticles
+   * @description Creates the article list for the news
+   * @param {Article[]} news
+   * @param {HTMLUListElement} ul
+   * @returns {HTMLUListElement}
+   */
+  createArticles(news, ul) {
+    news.forEach((article) => {
+      if (article.title === undefined) return
+      const li = document.createElement('li')
+      li.classList.add('article__item')
+      li.innerHTML = `
+        <div class="article__image">
+          <img src=${article.image} alt=${article.title} />
+        </div>
+        <div class="article__text">
+          <span class="article__chapeu">${article.chapeu}</span>
+          <a href=${article.url} class="article__title">
+            <h2 class="article__title">${article.title}</h2>
+          </a>
+          <p>${article.summary}</p>
+          <span class="article__date">${this.formatDate(
+            article.created
+          )} - Em ${article.section}
+          </span>
+        </div>
+      `
+      ul.appendChild(li)
+    })
+    return ul
+  }
+
+  /**
+   *
+   * @param {string} date
+   * @returns {string}
+   */
+  formatDate(date) {
+    const createdDate = new Date(date)
+    const today = new Date()
+    const diffTime = Math.abs(today.getTime() - createdDate.getTime())
+    const diffSeconds = Math.ceil(diffTime / 1000)
+    const diffMinutes = Math.ceil(diffTime / (1000 * 60))
+    const diffHours = Math.ceil(diffTime / (1000 * 60 * 60))
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+
+    if (diffSeconds < 60) {
+      return `${diffSeconds} segundos atrás`
+    } else if (diffMinutes < 60) {
+      return `${diffMinutes} minutos atrás`
+    } else if (diffHours < 24) {
+      return `${diffHours} horas atrás`
+    } else {
+      return `${diffDays} dias atrás`
+    }
+  }
+  /**
+   * @funtion fetchNews
+   * @description Fetches news from the API
+   * @param {string | number} page
+   * @returns {Promise<[Article[] | null, HTMLDivElement | null]>}
+   */
+  async fetchNews(page = 1) {
+    try {
+      const response = await fetch(`http://localhost:3000/feed/page/${page}`)
+      /** @type {Article[]} */
+      const news = await response.json()
+      this.newsTest = [...this.newsTest, ...news]
+      this.totalItems = this.newsTest.length
+      console.log(this.totalItems)
+      console.log(this.newsTest.length)
+      return [news, null]
+    } catch (error) {
+      console.log(error)
+      const errorDiv = document.createElement('div')
+      errorDiv.textContent = 'Não foi possível carregar as notícias'
+      return [null, errorDiv]
+    }
+  }
+
+  async connectedCallback() {
+    const shadow = this.attachShadow({ mode: 'open' })
+
+    const sheet = await fetch('./components/News/styles.css')
+    const sheetText = await sheet.text()
+    const style = document.createElement('style')
+    style.textContent = sheetText
+    shadow.appendChild(style)
+
+    const div = document.createElement('div')
+    div.classList.add('article__container')
+
+    const [news, errorDiv] = await this.fetchNews()
+    this.totalItems += news?.length || 0
+    if (news) {
+      const ul = document.createElement('ul')
+      ul.classList.add('article__list')
 
 }
 
