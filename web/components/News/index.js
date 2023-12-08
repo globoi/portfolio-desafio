@@ -158,24 +158,21 @@ class News extends HTMLElement {
    * @method connectedCallback
    */
   async connectedCallback() {
-    const shadow = this.attachShadow({ mode: 'open' })
-
     const sheet = await fetch('./components/News/styles.css')
     const sheetText = await sheet.text()
     const style = document.createElement('style')
     style.textContent = sheetText
-    shadow.appendChild(style)
+    this.shadow.appendChild(style)
 
     const div = document.createElement('div')
     div.classList.add('article__container')
+    this.shadow.appendChild(div)
 
-    const [news, errorDiv] = await this.fetchNews()
-    this.totalItems += news?.length || 0
-    if (news) {
-      const ul = document.createElement('ul')
-      ul.classList.add('article__list')
+    let ul = document.createElement('ul')
+    ul.classList.add('article__list')
 
-      const updatedUl = this.createArticles(news, ul)
+    div.appendChild(ul)
+  }
 
       const button = document.createElement('button')
       button.classList.add('article__button')
