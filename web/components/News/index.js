@@ -210,6 +210,19 @@ class News extends HTMLElement {
       this.shadow.appendChild(errorDiv)
     }
   }
+
+  openModal() {
+    const modal = document.createElement('div')
+    modal.style.position = 'fixed'
+    modal.style.top = '50%'
+    modal.style.left = '50%'
+    modal.style.width = '100%'
+    modal.style.height = '100%'
+    modal.style.transform = 'translate(-50%, -50%)'
+    modal.style.background = 'rgba(0, 0, 0, 0.7)'
+    modal.style.padding = '1em'
+    modal.textContent = 'This is a modal'
+    document.body.appendChild(modal)
   }
 }
 
