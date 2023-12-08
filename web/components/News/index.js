@@ -83,7 +83,8 @@ class News extends HTMLElement {
           )} - Em ${article.section}
           </span>
         </div>
-      `
+        `
+      }
       if (article?.video?.duration) {
         const div = li.querySelector('div.article__image--wrapper')
         div?.setAttribute(
