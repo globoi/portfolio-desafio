@@ -7,7 +7,6 @@
 /**
  * @funtion fetchNews
  * @description Fetches news from the API
- * @param {string | number} page
  * @returns {Promise<Article[]>}
  */
 const fetchTopNews = async () => {
