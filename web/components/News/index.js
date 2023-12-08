@@ -64,6 +64,13 @@ class News extends HTMLElement {
           </span>
         </div>
       `
+      if (article?.video?.duration) {
+        const div = li.querySelector('div.article__image--wrapper')
+        div?.setAttribute(
+          'data-video-duration',
+          `${this.formatDuration(article.video.duration)}`
+        )
+      }
       ul.appendChild(li)
     })
     return ul
