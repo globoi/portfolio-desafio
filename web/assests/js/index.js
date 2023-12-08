@@ -16,3 +16,19 @@ const fetchTopNews = async () => {
 
   return news
 }
+
+fetchTopNews().then((news) => {
+  news.forEach((article, index) => {
+    const div = document.querySelector(`.news__top--${index}`)
+    const a = document.createElement('a')
+    a.setAttribute('href', `${article.url}`)
+    a.innerHTML = `
+      <span>${article.chapeu || article.section}</span>
+      <h1>${article.title}</h1>
+      <p>${article.summary}</p>
+    `
+
+    div?.appendChild(a)
+    div?.setAttribute('style', `background-image: url("${article.image}")`)
+  })
+})
