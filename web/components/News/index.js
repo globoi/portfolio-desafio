@@ -91,6 +91,11 @@ class News extends HTMLElement {
       if (article?.video?.duration) {
         const div = li.querySelector('div.article__image--wrapper')
         const span = document.createElement('span')
+        const video = document.createElement('video')
+        video.src = article.video.source
+        video.controls = true
+        video.classList.add('article__video')
+
         span.innerHTML = `
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
