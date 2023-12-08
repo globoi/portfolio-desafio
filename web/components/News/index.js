@@ -48,7 +48,9 @@ class News extends HTMLElement {
       li.classList.add('article__item')
       li.innerHTML = `
         <div class="article__image">
-          <img src=${article.image} alt=${article.title} />
+          <div class="article__image--wrapper">
+            <img src=${article.image} alt=${article.title} />
+        </div>
         </div>
         <div class="article__text">
           <span class="article__chapeu">${article.chapeu}</span>
