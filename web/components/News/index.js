@@ -18,6 +18,23 @@ class News extends HTMLElement {
   }
 
   /**
+   * @function formatDuration
+   * @description Formats the duration of the video
+   * @param {number} duration
+   * @returns {string}
+   */
+  formatDuration(duration) {
+    duration = duration / 1000
+    let minutes = Math.floor(duration / 60)
+    let seconds = Math.floor(duration % 60)
+
+    let strMinutes = (minutes < 10 ? '0' : '') + minutes
+    let strSeconds = (seconds < 10 ? '0' : '') + seconds
+
+    return strMinutes + ':' + strSeconds
+  }
+
+  /**
    * @method createArticles
    * @description Creates the article list for the news
    * @param {Article[]} news
