@@ -116,6 +116,36 @@ class News extends HTMLElement {
       const ul = document.createElement('ul')
       ul.classList.add('article__list')
 
+      const updatedUl = this.createArticles(news, ul)
+
+      const button = document.createElement('button')
+      button.classList.add('article__button')
+      button.textContent = 'Leia Mais'
+
+      button.addEventListener('click', async () => {
+        this.currentPage += 1
+        this.setAttribute('page', String(this.currentPage))
+        const [news, errorDiv] = await this.fetchNews(
+          +(this.getAttribute('page') || 1)
+        )
+
+        if (news) {
+          this.createArticles(news, updatedUl)
+        }
+      })
+      div.appendChild(updatedUl)
+      div.appendChild(button)
+      shadow.appendChild(div)
+    } else if (errorDiv) {
+      shadow.appendChild(errorDiv)
+    }
+  }
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'page') {
+      console.log(`Page changed from ${oldValue} to ${newValue}`)
+      // You can add your ad here based on the new page value
+    }
+  }
 }
 
 customElements.define('news-list', News)
