@@ -132,6 +132,7 @@ class News extends HTMLElement {
       return `${diffDays} dias atrás`
     }
   }
+
   /**
    * @funtion fetchNews
    * @description Fetches news from the API
@@ -142,11 +143,8 @@ class News extends HTMLElement {
     try {
       const response = await fetch(`http://localhost:3000/feed/page/${page}`)
       /** @type {Article[]} */
-      const news = await response.json()
-      this.newsTest = [...this.newsTest, ...news]
-      this.totalItems = this.newsTest.length
-      console.log(this.totalItems)
-      console.log(this.newsTest.length)
+      let news = await response.json()
+      this.totalItems += news.length
       return [news, null]
     } catch (error) {
       console.log(error)
