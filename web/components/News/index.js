@@ -63,18 +63,21 @@ class News extends HTMLElement {
           </div>
         `
       } else {
-      li.innerHTML = `
+        li.innerHTML = `
         <div class="article__image">
           <div class="article__image--wrapper">
             <img src=${article.image} alt=${article.title} />
-        </div>
+          </div>
         </div>
         <div class="article__text">
           <span class="article__chapeu">${article.chapeu}</span>
           <a href=${article.url} class="article__title">
             <h2 class="article__title">${article.title}</h2>
           </a>
-          <p>${article.summary}</p>
+          <div class="article__text--wrapper">
+            <span>●</span>
+            <a href=${article.url}>${article.summary}</a>
+          </div>
           <span class="article__date">${this.formatDate(
             article.created
           )} - Em ${article.section}
