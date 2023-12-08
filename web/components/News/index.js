@@ -107,7 +107,7 @@ class News extends HTMLElement {
         `
         span.classList.add('article__video--overlay')
         span.addEventListener('click', () => {
-          this.openModal()
+          this.openModal(video)
         })
         div?.appendChild(span)
       }
