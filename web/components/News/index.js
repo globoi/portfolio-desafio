@@ -154,6 +154,9 @@ class News extends HTMLElement {
     }
   }
 
+  /**
+   * @method connectedCallback
+   */
   async connectedCallback() {
     const shadow = this.attachShadow({ mode: 'open' })
 
