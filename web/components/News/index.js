@@ -46,6 +46,23 @@ class News extends HTMLElement {
       if (article.title === undefined) return
       const li = document.createElement('li')
       li.classList.add('article__item')
+      if (index === this.addsAfter) {
+        li.innerHTML = `
+          <div class="article__image">
+            <div class="article__image--wrapper">
+              <img src="https://picsum.photos/500/300" alt="Anúncio" />
+            </div>
+          </div>
+          <div class="article__text">
+            <span class="article__chapeu--ad">Anúncio</span>
+            <a href="#" class="article__title">
+              <h2 class="article__title">Anúncio</h2>
+            </a>
+            <p>Compre o melhor produto do mundo</p>
+            <span class="article__date">Agora mesmo</span>
+          </div>
+        `
+      } else {
       li.innerHTML = `
         <div class="article__image">
           <div class="article__image--wrapper">
