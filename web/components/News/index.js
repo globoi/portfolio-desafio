@@ -87,10 +87,21 @@ class News extends HTMLElement {
       }
       if (article?.video?.duration) {
         const div = li.querySelector('div.article__image--wrapper')
-        div?.setAttribute(
-          'data-video-duration',
-          `${this.formatDuration(article.video.duration)}`
-        )
+        const span = document.createElement('span')
+        span.innerHTML = `
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z">
+              </path>
+            </svg>
+          </div>
+          <span>${this.formatDuration(article.video.duration)}</span>
+        `
+        span.classList.add('article__video--overlay')
+        span.addEventListener('click', () => {
+          this.openModal()
+        })
+        div?.appendChild(span)
       }
       ul.appendChild(li)
     })
