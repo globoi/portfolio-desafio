@@ -219,18 +219,39 @@ class News extends HTMLElement {
     }
   }
 
-  openModal() {
-    const modal = document.createElement('div')
-    modal.style.position = 'fixed'
-    modal.style.top = '50%'
-    modal.style.left = '50%'
-    modal.style.width = '100%'
-    modal.style.height = '100%'
-    modal.style.transform = 'translate(-50%, -50%)'
-    modal.style.background = 'rgba(0, 0, 0, 0.7)'
-    modal.style.padding = '1em'
-    modal.textContent = 'This is a modal'
-    document.body.appendChild(modal)
+  /**
+   * @method openModal
+   * @description Opens a modal with the component passed as a parameter
+   * @param {Element} component
+   */
+  openModal(component) {
+    const modal = document.querySelector('dialog')
+    const div = modal?.querySelector('div.modal__container')
+
+    if (div) {
+      div.appendChild(component)
+    }
+    if (modal && div) {
+      modal.appendChild(div)
+      modal.showModal()
+
+      modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+          const video = modal.querySelector('video')
+          if (video) {
+            video.pause()
+          }
+          this.closeModal()
+        }
+      })
+    }
+  }
+
+  closeModal() {
+    const modal = document.querySelector('dialog')
+    if (modal) {
+      modal.close()
+    }
   }
 }
 
