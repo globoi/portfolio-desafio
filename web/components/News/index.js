@@ -174,33 +174,42 @@ class News extends HTMLElement {
     div.appendChild(ul)
   }
 
-      const button = document.createElement('button')
-      button.classList.add('article__button')
-      button.textContent = 'Leia Mais'
+  async attributeChangedCallback(name, oldValue, newValue) {
+    const [news, errorDiv] = await this.fetchNews(newValue)
 
-      button.addEventListener('click', async () => {
-        this.currentPage += 1
-        this.setAttribute('page', String(this.currentPage))
-        const [news, errorDiv] = await this.fetchNews(
-          +(this.getAttribute('page') || 1)
-        )
+    if (news?.length && news.length > 0) {
+      let ul = this.shadow.querySelector('ul.article__list')
 
-        if (news) {
-          this.createArticles(news, updatedUl)
+      if (!ul) return
+
+      ul = this.createArticles(news, ul)
+
+      const div = this.shadow.querySelector('.article__container')
+      if (div) {
+        const button = document.createElement('button')
+        button.classList.add('article__button')
+        button.textContent = 'Leia Mais'
+        button.addEventListener('click', async () => {
+          this.currentPage += 1
+          this.setAttribute('page', String(this.currentPage))
+        })
+        div?.appendChild(ul)
+
+        if (newValue > 1) {
+          const previousButton = this.shadow.querySelector(
+            'button.article__button'
+          )
+          if (previousButton) {
+            previousButton.remove()
+          }
         }
-      })
-      div.appendChild(updatedUl)
-      div.appendChild(button)
-      shadow.appendChild(div)
+        div.appendChild(button)
+        this.shadow.appendChild(div)
+      }
     } else if (errorDiv) {
-      shadow.appendChild(errorDiv)
+      this.shadow.appendChild(errorDiv)
     }
   }
-  attributeChangedCallback(name, oldValue, newValue) {
-    if (name === 'page') {
-      console.log(`Page changed from ${oldValue} to ${newValue}`)
-      // You can add your ad here based on the new page value
-    }
   }
 }
 
