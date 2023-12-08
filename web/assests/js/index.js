@@ -10,8 +10,8 @@
  * @param {string | number} page
  * @returns {Promise<Article[]>}
  */
-const fetchNews = async (page = 1) => {
-  const response = await fetch(`http://localhost:3000/feed/page/${page}`)
+const fetchTopNews = async () => {
+  const response = await fetch(`http://localhost:3000/feed/top3`)
   /** @type {Article[]} */
   const news = await response.json()
 
