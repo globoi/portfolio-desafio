@@ -1,6 +1,10 @@
 //@ts-check
 
 /**
+ * @typedef {import('../../types/news').Article} Article
+ */
+
+/**
  * @funtion fetchNews
  * @description Fetches news from the API
  * @param {string | number} page
