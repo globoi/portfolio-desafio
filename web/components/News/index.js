@@ -9,7 +9,9 @@ class News extends HTMLElement {
     this.currentPage = +(this.getAttribute('page') || 1)
     this.totalItems = 0
     this.totalAds = 0
-    this.newsTest = []
+    this.addsAfter = 8
+    this.shadow = this.attachShadow({ mode: 'open' })
+
     const font = document.createElement('link')
     font.href =
       'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
