@@ -4,6 +4,7 @@
  */
 
 class News extends HTMLElement {
+  static observedAttributes = ['page']
   constructor() {
     super()
     this.currentPage = +(this.getAttribute('page') || 1)
