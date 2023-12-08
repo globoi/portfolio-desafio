@@ -38,11 +38,11 @@ class News extends HTMLElement {
    * @method createArticles
    * @description Creates the article list for the news
    * @param {Article[]} news
-   * @param {HTMLUListElement} ul
-   * @returns {HTMLUListElement}
+   * @param {Element} ul
+   * @returns {Element}
    */
   createArticles(news, ul) {
-    news.forEach((article) => {
+    news.forEach((article, index) => {
       if (article.title === undefined) return
       const li = document.createElement('li')
       li.classList.add('article__item')
