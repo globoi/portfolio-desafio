@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import './reset.css';
 
+:root {
+  --primary-color: #c4170c;
+  --secondary-color: #33333c;
+  --font-terciary-color: #a3a3a3;
+  --border-color: #eaeaeaf3;
+  --bg-color-light: #f9f9f9;
+  --image-border-radius: 1rem;
+  --ad-color: #ffaa00;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: var(--bg-color-light);
+}
+
 .logo {
   width: 42px;
   height: 42px;
