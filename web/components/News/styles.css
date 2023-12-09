@@ -6,7 +6,7 @@
   --font-terciary-color: #a3a3a3;
   --border-color: #eaeaeaf3;
   --bg-color-light: #f9f9f9;
-  --image-border-radius: 1rem;
+  --image-border-radius: 12px;
   --ad-color: #ffaa00;
   font-family: 'Open Sans', sans-serif;
   background-color: var(--bg-color-light);
