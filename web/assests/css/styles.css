@@ -7,7 +7,7 @@
   --font-terciary-color: #a3a3a3;
   --border-color: #eaeaeaf3;
   --bg-color-light: #f9f9f9;
-  --image-border-radius: 1rem;
+  --image-border-radius: 12px;
   --ad-color: #ffaa00;
 }
 
@@ -134,11 +134,11 @@ body {
   display: grid;
   gap: 30px;
   background-color: var(--bg-color-light);
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1.5fr;
 }
 
 .main__aside {
-  height: 30%;
+  height: max-content;
   background-color: white;
   border: solid 1px var(--border-color);
   border-radius: var(--image-border-radius);
@@ -154,11 +154,39 @@ body {
   border-bottom: 1px solid var(--border-color);
 }
 
-.aside__footer {
+.aside__news {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: 10px;
   padding: 1.5rem;
+  text-decoration: none;
   color: var(--primary-color);
+}
+.aside__news a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.aside__news h3 {
+  padding-top: 10px;
+}
+
+.aside__news--img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--image-border-radius);
+}
+
+.aside__footer {
+  padding: 1rem;
   font-weight: 600;
   border-top: 1px solid var(--border-color);
+}
+.aside__footer a {
+  color: var(--primary-color);
   text-decoration: none;
 }
 
