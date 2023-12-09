@@ -12,6 +12,7 @@ class News extends HTMLElement {
     this.totalAds = 0
     this.addsAfter = 8
     this.shadow = this.attachShadow({ mode: 'open' })
+    this.ads = []
 
     const font = document.createElement('link')
     font.href =
@@ -61,19 +62,20 @@ class News extends HTMLElement {
       const li = document.createElement('li')
       li.classList.add('article__item')
       if (index === this.addsAfter) {
+        const ad = this.ads[this.minMax(0, this.ads.length - 1)]
         li.innerHTML = `
           <div class="article__image">
             <div class="article__image--wrapper">
-              <img src="https://picsum.photos/500/300" alt="Anúncio" />
+              <img src="https://picsum.photos/500/300" alt=${ad.chapeu} />
             </div>
           </div>
           <div class="article__text">
-            <span class="article__chapeu--ad">Anúncio</span>
+            <span class="article__chapeu--ad">${ad.chapeu}</span>
             <a href="#" class="article__title">
-              <h2 class="article__title">Anúncio</h2>
+              <h2 class="article__title">${ad.title}</h2>
             </a>
-            <p>Compre o melhor produto do mundo</p>
-            <span class="article__date">Agora mesmo</span>
+            <p>${ad.summary}</p>
+            <span class="article__date">${ad.section}</span>
           </div>
         `
       } else {
@@ -212,6 +214,7 @@ class News extends HTMLElement {
   }
 
   async attributeChangedCallback(name, oldValue, newValue) {
+    this.ads = await this.fetchAds()
     const [news, errorDiv] = await this.fetchNews(newValue)
 
     if (news?.length && news.length > 0) {
