@@ -174,6 +174,24 @@ class News extends HTMLElement {
   }
 
   /**
+   * @funtion fetchAds
+   * @description Fetches ads from the API
+   * @returns {Promise<Article[] | []>}
+   */
+  async fetchAds() {
+    try {
+      const response = await fetch(`http://localhost:3000/ads`)
+      /** @type {Article[]} */
+      const res = await response.json()
+
+      return res.length > 0 ? res : []
+    } catch (error) {
+      console.log(error)
+      return []
+    }
+  }
+
+  /**
    * @method connectedCallback
    */
   async connectedCallback() {
