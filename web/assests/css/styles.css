@@ -84,6 +84,7 @@ body {
 .news__top--1 p,
 .news__top--2 p {
   z-index: 1;
+  font-weight: 600;
 }
 
 .news__top--0 p::after,
@@ -95,7 +96,7 @@ body {
 .news__top--0 span,
 .news__top--1 span,
 .news__top--2 span {
-  font-weight: 500;
+  font-weight: 600;
   z-index: 1;
 }
 
