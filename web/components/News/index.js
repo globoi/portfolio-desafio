@@ -82,7 +82,9 @@ class News extends HTMLElement {
         li.innerHTML = `
         <div class="article__image">
           <div class="article__image--wrapper">
-            <img src=${article.image} alt=${article.title} />
+            <a href="${article?.video?.duration ? '' : article.url}">
+              <img src=${article.image} alt=${article.title} />
+            </a>
           </div>
         </div>
         <div class="article__text">
