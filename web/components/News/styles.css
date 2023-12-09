@@ -69,13 +69,14 @@
 
 .article__chapeu--ad {
   color: white;
+  text-wrap: nowrap;
   font-weight: 700;
   padding: 0.4rem;
   border-radius: 5px;
   text-transform: uppercase;
   background-color: var(--ad-color);
   text-decoration: none;
-  width: min-content;
+  width: max-content;
 }
 
 .article__date {
