@@ -34,17 +34,17 @@ fetchTopNews().then((news) => {
 })
 
 fetchTopNews().then((news) => {
-  news.forEach((article, index) => {
+  news.forEach((article) => {
     const div = document.querySelector('.aside__header')
-    const divRelatedNews = document.createElement('div')
-    divRelatedNews.setAttribute('class', 'aside__news')
-    divRelatedNews.innerHTML = `
+    const liRelatedNews = document.createElement('li')
+    liRelatedNews.setAttribute('class', 'aside__news')
+    liRelatedNews.innerHTML = `
       <a href="${article.url}">
         <h3>${article.title}</h3>
       </a>
       <a href="${article.url}"><img src="${article.image}" alt="${article.section}" class="aside__news--img" /></a>
     `
 
-    div?.nextElementSibling?.appendChild(divRelatedNews)
+    div?.nextElementSibling?.appendChild(liRelatedNews)
   })
 })
