@@ -30,6 +30,16 @@ app.get('/feed/top3', async (req, res) => {
   }
 })
 
+app.get('/ads', async (req, res) => {
+  try {
+    const raw = fs.readFileSync(`./dump/cleared/ads.json`)
+    const parsed = JSON.parse(raw)
+    res.send(parsed)
+  } catch (error) {
+    res.send({ message: "We're unable to load this page." })
+  }
+})
+
 app.listen(PORT, () => {
   console.log(`API executando em http://localhost:${PORT}`)
 })
