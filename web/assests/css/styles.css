@@ -135,16 +135,10 @@ body {
   gap: 30px;
   background-color: var(--bg-color-light);
   grid-template-columns: 3fr 1fr;
-  padding: 20px;
-}
-
-.main__container {
-  max-width: 85rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main__aside {
+  height: 30%;
   background-color: white;
   border: solid 1px var(--border-color);
   border-radius: var(--image-border-radius);
