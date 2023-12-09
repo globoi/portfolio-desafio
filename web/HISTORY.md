@@ -6,6 +6,8 @@ Não serão utilizados frameworks para explorar meu potencial de adaptação em 
 
 Como estou bem acostumado com `TypeScript` pode ser que o utilize no projeto.
 
+(UPDATE): Decidi utilizar `Vanilla JS` + `JSDoc` para tipagem e deixar o projeto mais vanilla possível.
+
 # Estruturando o Aplicativo
 
 1. Header
@@ -17,7 +19,7 @@ Como estou bem acostumado com `TypeScript` pode ser que o utilize no projeto.
 # Criando um WebComponent para a Section de Lista de Matérias
 
 Decidi criar um WebComponent pra encapsular tudo que fosse responsável por essa secção, assim tornando o componente um
-microserviço.
+**micro-frontend**.
 
 Encapsulei os estilos usando um `Shadow DOM` para testar algumas coisas tendo em vista que foi a primeira vez que fiz
 um `WebComponent` mais complexo, anteriormente havia trabalhado com `WebComponents` mais como `CustomElements` na plataforma
