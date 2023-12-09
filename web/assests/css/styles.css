@@ -148,6 +148,24 @@ body {
   background-color: white;
   border: solid 1px var(--border-color);
   border-radius: var(--image-border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.aside__header {
+  padding: 1.5rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.aside__footer {
+  padding: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-top: 1px solid var(--border-color);
+  text-decoration: none;
 }
 
 .main__materia {
