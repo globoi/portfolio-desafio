@@ -1,0 +1,145 @@
+[
+  {
+    "chapeu": "Assessor de Tecnologia e Informação",
+    "image": "https://picsum.photos/500/300",
+    "section": "Secretaria de Monitoramento de Ações Governamentais",
+    "summary": "Experiência de 9 meses na SEMAG, atuando como Assessor e Analista de Dados, utilizando Python e JavaScript para desenvolvimento de painéis dinâmicos no Power BI.",
+    "title": "Assessor de Tecnologia e Informação na SEMAG",
+    "url": "https://github.com/bwprado",
+    "group": [
+      "Assessor de Tecnologia e Informação",
+      "Python",
+      "JavaScript",
+      "Power BI"
+    ],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "1"
+  },
+  {
+    "chapeu": "Desenvolvedor de Front-end",
+    "image": "https://picsum.photos/500/300",
+    "section": "Nexur Tecnologia e Software",
+    "summary": "Mais de 1 ano como Desenvolvedor de Front-end na Nexur, especializado em Next.js, React, Redux, RTK Toolkit, e Tailwind para criação de interfaces responsivas.",
+    "title": "Desenvolvedor de Front-end na Nexur",
+    "url": "https://github.com/bwprado",
+    "group": [
+      "Desenvolvedor de Front-end",
+      "Next.js",
+      "React",
+      "Redux",
+      "Tailwind"
+    ],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "2"
+  },
+  {
+    "chapeu": "Contractor",
+    "image": "https://picsum.photos/500/300",
+    "section": "Threed Software",
+    "summary": "Trabalhando como Contractor na Threed Software há 3 anos, criando códigos de alta performance para desenvolvimento de softwares incríveis.",
+    "title": "Contractor na Threed Software",
+    "url": "https://github.com/bwprado",
+    "group": ["Contractor", "Coding Practices", "Remote Work", "JavaScript"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "3"
+  },
+  {
+    "chapeu": "Diretor Geral",
+    "image": "https://picsum.photos/500/300",
+    "section": "Loja Meia Ponta",
+    "summary": "9 anos como Diretor Geral na Loja Meia Ponta, gerenciando equipe de vendas, compras, e comunicação da empresa.",
+    "title": "Diretor Geral na Loja Meia Ponta",
+    "url": "https://github.com/bwprado",
+    "group": ["Diretor Geral", "Management", "Sales"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "4"
+  },
+  {
+    "chapeu": "Gerente de Projetos",
+    "image": "https://picsum.photos/500/300",
+    "section": "Construtora A4 Arquitetura",
+    "summary": "5 anos como sócio e gerente de projetos na Construtora A4 Arquitetura, liderando a construção de 12 casas de pequeno/médio porte.",
+    "title": "Gerente de Projetos na Construtora A4 Arquitetura",
+    "url": "https://github.com/bwprado",
+    "group": ["Gerente de Projetos", "Construction", "Management"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "5"
+  },
+  {
+    "chapeu": "TypeScript",
+    "image": "https://picsum.photos/500/300",
+    "section": "Nexur Tecnologia e Software",
+    "summary": "Conhecimento intermediário/avançado em TypeScript, com experiência em desenvolvimento de aplicações web e mobile.",
+    "title": "Desenvolvedor de Front-end na Nexur",
+    "url": "https://github.com/bwprado",
+    "group": [
+      "Desenvolvedor de Front-end",
+      "Next.js",
+      "React",
+      "Redux",
+      "Tailwind"
+    ],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "6"
+  },
+  {
+    "chapeu": "Svelte",
+    "image": "https://picsum.photos/500/300",
+    "section": "SmartStockIt App",
+    "summary": "Software gratuito para gestão de estoque, desenvolvido em Svelte e hospedado no Vercel, com banco de Dados Supabase. Confira o código no GitHub.",
+    "title": "WIP Development",
+    "url": "https://wwww.smartstockit.com",
+    "group": ["Svelte", "Supabase", "Vercel", "GitHub"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "7"
+  },
+  {
+    "chapeu": "WIX Velo Master",
+    "image": "https://picsum.photos/500/300",
+    "section": "Wix Developer",
+    "summary": "Participo de um grupo de desenvolvedores WIX Velo Master, criado pela WIX para escutar os desenvolvedores mais experientes e melhorar a plataforma.",
+    "title": "WIX Velo Master",
+    "url": "https://www.wix.com",
+    "group": ["WIX Velo Master", "WIX", "WIX Velo", "WIX Corvid"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "8"
+  },
+  {
+    "chapeu": "WIX Velo Certified",
+    "image": "https://picsum.photos/500/300",
+    "section": "Wix Developer",
+    "summary": "Certificado pela WIX como desenvolvedor WIX Velo, com conhecimento avançado em WIX e em todas as suas ferramentas e API",
+    "title": "WIX Velo Certified",
+    "url": "https://www.wix.com",
+    "group": ["WIX Velo Certified", "WIX", "WIX Velo"],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "9"
+  },
+  {
+    "chapeu": "React",
+    "image": "https://picsum.photos/500/300",
+    "section": "Desenvolvedor Front-end",
+    "summary": "Curso de 20h em React feito na Udemy, conhecimento intermediário/avançado em React, com experiência em desenvolvimento de aplicações web e mobile.",
+    "title": "Desenvolvedor Front-end - Perfil no GitHub",
+    "url": "https://github.com/bwprado",
+    "group": [
+      "Desenvolvedor de Front-end",
+      "Next.js",
+      "React",
+      "Redux",
+      "Tailwind"
+    ],
+    "type": "ad",
+    "created": "2023-12-08T00:00:00Z",
+    "id": "10"
+  }
+]
