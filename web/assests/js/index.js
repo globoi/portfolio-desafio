@@ -32,3 +32,19 @@ fetchTopNews().then((news) => {
     div?.setAttribute('style', `background-image: url("${article.image}")`)
   })
 })
+
+fetchTopNews().then((news) => {
+  news.forEach((article, index) => {
+    const div = document.querySelector('.aside__header')
+    const divRelatedNews = document.createElement('div')
+    divRelatedNews.setAttribute('class', 'aside__news')
+    divRelatedNews.innerHTML = `
+      <a href="${article.url}">
+        <h3>${article.title}</h3>
+      </a>
+      <a href="${article.url}"><img src="${article.image}" alt="${article.section}" class="aside__news--img" /></a>
+    `
+
+    div?.nextElementSibling?.appendChild(divRelatedNews)
+  })
+})
