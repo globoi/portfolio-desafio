@@ -65,13 +65,13 @@ class News extends HTMLElement {
         const ad = this.ads[this.minMax(0, this.ads.length - 1)]
         li.innerHTML = `
           <div class="article__image">
-            <div class="article__image--wrapper">
+            <a href="${article.url}" class="article__image--wrapper">
               <img src="https://picsum.photos/500/300" alt=${ad.chapeu} />
-            </div>
+            </a>
           </div>
           <div class="article__text">
             <span class="article__chapeu--ad">${ad.chapeu}</span>
-            <a href="#" class="article__title">
+            <a href="${article.url}" class="article__title">
               <h2 class="article__title">${ad.title}</h2>
             </a>
             <p>${ad.summary}</p>
