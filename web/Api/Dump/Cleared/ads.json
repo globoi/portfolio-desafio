@@ -91,9 +91,9 @@
   {
     "chapeu": "Svelte",
     "image": "https://picsum.photos/500/300",
-    "section": "SmartStockIt App",
+    "section": "WIP Development",
     "summary": "Software gratuito para gestão de estoque, desenvolvido em Svelte e hospedado no Vercel, com banco de Dados Supabase. Confira o código no GitHub.",
-    "title": "WIP Development",
+    "title": "SmartStockIt App",
     "url": "https://wwww.smartstockit.com",
     "group": ["Svelte", "Supabase", "Vercel", "GitHub"],
     "type": "ad",
