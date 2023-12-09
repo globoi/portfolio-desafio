@@ -112,6 +112,7 @@ body {
 .news__top--1::before,
 .news__top--2::before {
   content: '';
+  pointer-events: none;
   position: absolute;
   top: 0;
   right: 0;
