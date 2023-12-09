@@ -52,7 +52,7 @@ Adicionei apenas uma `media query`, que é que tem no site G1 hoje, fiquei satis
 
 ### Agradecimentos
 
-Agradeço à todos a oportunidade de participação no desafio, que foi não foi só um desafio técnico, mas também um desafio físico de mental, uma semana difícil, onde todos os trabalhos acumularam, mas por sorte, hoje dia 09/12 foi feriado em minha cidade, e resolvi fazê-lo.
+Agradeço à todos a oportunidade de participação no desafio, que foi não foi só um desafio técnico, mas também um desafio físico de mental, uma semana difícil, onde todos os trabalhos acumularam, mas por sorte, hoje dia 09/12 foi feriado em minha cidade, e resolvi fazê-lo nesse tempo livre, em torno de 8h.
 
 # Guia de instalação
 
@@ -71,3 +71,13 @@ Posteriormente, basta instalar o servidor `http-server` utilizando o seguinte co
 Depois basta rodá-lo com o comando:
 
 `yarn dev`
+
+
+# O que faria se tivesse mais tempo?
+
+- Melhorar e testar tratamento de erros, principalmente os fetchs da API.
+- Fazer testes unitários, principalmente no componente `<news-list />`
+- DRY (alguns códigos podem ser abstraídos para funções mais genéricas e puras)
+- Adicionar loading states para os componentes.
+- Melhoraria o código de inserção de publicidade, fazendo a API já retornar a posição da publicidade, movendo a da regra de negócios para a API, facilitando a modificação simples sem mexer no front.
+- Melhorar o loading de imagens, pra otimizar performance.
