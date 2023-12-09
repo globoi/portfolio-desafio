@@ -21,6 +21,17 @@ class News extends HTMLElement {
   }
 
   /**
+   * @method minMax
+   * @description Returns a random number between min and max
+   * @param {number} min
+   * @param {number} max
+   * @returns {number}
+   */
+  minMax(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+
+  /**
    * @function formatDuration
    * @description Formats the duration of the video
    * @param {number} duration
