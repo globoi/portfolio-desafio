@@ -281,6 +281,10 @@ class News extends HTMLElement {
     }
   }
 
+  /**
+   * @method closeModal
+   * @description This method closes any open modal on the page.
+   */
   closeModal() {
     const modal = document.querySelector('dialog')
     if (modal) {
