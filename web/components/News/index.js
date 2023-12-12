@@ -13,12 +13,6 @@ class News extends HTMLElement {
     this.addsAfter = 8
     this.shadow = this.attachShadow({ mode: 'open' })
     this.ads = []
-
-    const font = document.createElement('link')
-    font.href =
-      'https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'
-    font.rel = 'stylesheet'
-    document.head.appendChild(font)
   }
 
   /**
