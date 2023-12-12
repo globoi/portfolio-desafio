@@ -265,23 +265,37 @@ class News extends HTMLElement {
     const span = document.createElement('span')
     const title = document.createElement('h2')
 
-    if (div) {
-      div.appendChild(component)
-    }
-    if (modal && div) {
-      modal.appendChild(div)
-      modal.showModal()
+    span.textContent = 'X'
+    title.textContent = component.getAttribute('data-name') || 'Vídeo'
 
-      modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-          const video = modal.querySelector('video')
-          if (video) {
-            video.pause()
-          }
-          this.closeModal()
+    span.classList.add('modal__close')
+    modal.classList.add('modal')
+    div.classList.add('modal__container')
+    title.classList.add('modal__title')
+    divWrapper.classList.add('modal__wrapper')
+
+    div.appendChild(span)
+    divWrapper.appendChild(title)
+    divWrapper.appendChild(component)
+    div.appendChild(divWrapper)
+    modal.appendChild(div)
+    document.body.appendChild(modal)
+
+    modal.showModal()
+
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        const video = modal.querySelector('video')
+        if (video) {
+          video.pause()
         }
-      })
-    }
+        this.closeModal()
+      }
+    })
+
+    span.addEventListener('click', () => {
+      this.closeModal()
+    })
   }
 
   /**
@@ -291,7 +305,7 @@ class News extends HTMLElement {
   closeModal() {
     const modal = document.querySelector('dialog')
     if (modal) {
-      modal.close()
+      modal.remove()
     }
   }
 }
