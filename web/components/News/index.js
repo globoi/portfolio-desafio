@@ -284,17 +284,17 @@ class News extends HTMLElement {
     modal.showModal()
 
     modal.addEventListener('click', (event) => {
-      if (event.target === modal) {
+      if (
+        event.target === modal ||
+        event.target === span ||
+        event.target === div
+      ) {
         const video = modal.querySelector('video')
         if (video) {
           video.pause()
         }
         this.closeModal()
       }
-    })
-
-    span.addEventListener('click', () => {
-      this.closeModal()
     })
   }
 
