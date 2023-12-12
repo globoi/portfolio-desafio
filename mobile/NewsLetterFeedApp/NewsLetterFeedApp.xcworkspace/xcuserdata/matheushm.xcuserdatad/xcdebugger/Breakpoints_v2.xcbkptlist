@@ -7,114 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsLetterFeedApp/Models/NewsLetterModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "getG1Feed()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 9ba6c02a3debd55f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsLetterFeedApp.Model.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 57e36e3b22a90fc6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.Model.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 15389d2879cd2388"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 5b9d0a688710569a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "42">
-               </Location>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 15389d2879cd2388"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "84">
-               </Location>
-               <Location
-                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 5b9d0a688710569a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
-                  moduleName = "NewsLetterFeedApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "20"
-                  endingLineNumber = "20"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A11AB8D1-8EA5-47EC-BAE3-15AE2B9F37F2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -156,6 +48,54 @@
                   startingLineNumber = "12"
                   endingLineNumber = "12"
                   offsetFromSymbolStart = "165">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3BA725B-7B63-44FA-AE7E-9AD0F79B9223"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsLetterFeedApp/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D3BA725B-7B63-44FA-AE7E-9AD0F79B9223 - 553b6b0b62a5ca15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;NewsLetterFeedApp.NewsLetter&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.contentShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, eoFill: Swift.Bool) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in NewsLetterFeedApp.ContentView.body.getter : some"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "151">
+               </Location>
+               <Location
+                  uuid = "D3BA725B-7B63-44FA-AE7E-9AD0F79B9223 - 5194162f6bbdcd4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsLetterFeedApp.NewsLetter) -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.contentShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, eoFill: Swift.Bool) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;NewsLetterFeedApp.NewsLetter&gt;, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.contentShape&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Shape&gt;(_: &#x3c4;_1_0, eoFill: Swift.Bool) -&gt; some&gt;&gt;.0&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.task(priority: Swift.TaskPriority, _: @Sendable () async -&gt; ()) -&gt; some&gt;&gt;.0 in NewsLetterFeedApp.ContentView.body.getter : some"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "466">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -13,14 +13,16 @@ struct ContentView: View {
         VStack {
             List {
                 ForEach(model.newsLetter) { news in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(news.content?.title ?? "")
-                            Text(news.content?.summary ?? "")
+                    if let stringUrl = news.content?.image?.url,
+                       let imageURL = URL(string: stringUrl){
+                        HStack {
+                            VStack(alignment: .leading) {
+                                NewsComponentView(chapeu: news.content?.chapeu?.label ?? "", title: news.content?.title ?? "", imageURL: imageURL, metadata: news.metadata ?? "", summary: news.content?.summary ?? "")
+                            }
+                            Spacer()
                         }
-                        Spacer()
+                        .contentShape(Rectangle())
                     }
-                    .contentShape(Rectangle())
                 }
             }.task {
                 do {
