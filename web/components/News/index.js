@@ -35,12 +35,8 @@ class News extends HTMLElement {
   formatDuration(duration) {
     duration = duration / 1000
     let minutes = Math.floor(duration / 60)
-    let seconds = Math.floor(duration % 60)
 
-    let strMinutes = (minutes < 10 ? '0' : '') + minutes
-    let strSeconds = (seconds < 10 ? '0' : '') + seconds
-
-    return strMinutes + ':' + strSeconds
+    return `${minutes} min`
   }
 
   /**
@@ -101,6 +97,7 @@ class News extends HTMLElement {
         const div = li.querySelector('div.article__image--wrapper')
         const span = document.createElement('span')
         const video = document.createElement('video')
+
         video.src = article.video.source
         video.controls = true
         video.classList.add('article__video')
