@@ -259,8 +259,11 @@ class News extends HTMLElement {
    * @param {Element} component
    */
   openModal(component) {
-    const modal = document.querySelector('dialog')
-    const div = modal?.querySelector('div.modal__container')
+    const modal = document.createElement('dialog')
+    const div = document.createElement('div')
+    const divWrapper = document.createElement('div')
+    const span = document.createElement('span')
+    const title = document.createElement('h2')
 
     if (div) {
       div.appendChild(component)
