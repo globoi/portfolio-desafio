@@ -202,7 +202,10 @@ body {
 }
 
 .modal {
-  padding: 0;
+  border: none;
+  background-color: transparent;
+  padding: 10em;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal::backdrop {
@@ -216,6 +219,7 @@ body {
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.7);
   padding: 0;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal__container {
