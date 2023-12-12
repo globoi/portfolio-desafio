@@ -110,6 +110,7 @@ class News extends HTMLElement {
         video.src = article.video.source
         video.controls = true
         video.classList.add('article__video')
+        video.setAttribute('data-name', article.title)
 
         span.innerHTML = `
           <div>
