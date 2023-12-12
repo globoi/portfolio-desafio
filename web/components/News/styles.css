@@ -137,15 +137,16 @@
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: end;
+  padding: 20px;
   border-radius: var(--image-border-radius);
 }
 
 .article__video--overlay svg {
   width: 50px;
   height: 50px;
-  fill: white;
+  fill: var(--primary-color);
 }
 
 .article__video--overlay:hover {
@@ -159,8 +160,26 @@
 .article__video--overlay span {
   font-size: 1rem;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
+}
+
+.article__video--button {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.play__button {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 768px) {
