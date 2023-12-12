@@ -95,7 +95,7 @@ class News extends HTMLElement {
       }
       if (article?.video?.duration) {
         const div = li.querySelector('div.article__image--wrapper')
-        const span = document.createElement('span')
+        const playButtonWrapper = document.createElement('div')
         const video = document.createElement('video')
 
         video.src = article.video.source
@@ -103,20 +103,22 @@ class News extends HTMLElement {
         video.classList.add('article__video')
         video.setAttribute('data-name', article.title)
 
-        span.innerHTML = `
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z">
-              </path>
-            </svg>
-          </div>
+        playButtonWrapper.innerHTML = `
+          <div class="article__video--button">
+            <div class="play__button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z">
+                </path>
+              </svg>
+            </div>
           <span>${this.formatDuration(article.video.duration)}</span>
+          </div>
         `
-        span.classList.add('article__video--overlay')
-        span.addEventListener('click', () => {
+        playButtonWrapper.classList.add('article__video--overlay')
+        playButtonWrapper.addEventListener('click', () => {
           this.openModal(video)
         })
-        div?.appendChild(span)
+        div?.appendChild(playButtonWrapper)
       }
       ul.appendChild(li)
     })
