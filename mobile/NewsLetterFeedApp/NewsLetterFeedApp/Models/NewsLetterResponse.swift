@@ -8,32 +8,36 @@
 import Foundation
 
 struct NewsLetterResponse: Decodable {
-    var feed: Feed
+    var feed: Feed?
 }
 
 struct Feed: Decodable {
-    var items: [NewsLetter]
+    var falkor: Falkor?
 }
 
-struct NewsLetter: Decodable {
-    var id: String
-    var type: String
-    var content: [ContentItem]
-    var metadata: String
+struct Falkor: Decodable {
+    var items: [NewsLetter]?
 }
 
-struct ContentItem: Decodable {
-    var chapeu: ContentLabel
-    var image: ImageUrl
-    var summary: String
-    var title: String
-    var url: String
+struct NewsLetter: Decodable, Identifiable {
+    var id: String?
+    var type: String?
+    var content: NewsLetterContent?
+    var metadata: String?
+}
+
+struct NewsLetterContent: Decodable {
+    var chapeu: ContentLabel?
+    var image: ImageUrl?
+    var summary: String?
+    var title: String?
+    var url: String?
 }
 
 struct ContentLabel: Decodable {
-    var label: String
+    var label: String?
 }
 
 struct ImageUrl: Decodable {
-    var url: String
+    var url: String?
 }

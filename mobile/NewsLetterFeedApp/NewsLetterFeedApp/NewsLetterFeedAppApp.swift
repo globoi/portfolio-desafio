@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NewsLetterFeedAppApp: App {
+    private var service = NewsLetterService()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(NewsLetterModel(newsLetterService: service))
         }
     }
 }

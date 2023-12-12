@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "79CB77D4-C883-4AE0-BE06-C56CAC4C8F3C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsLetterFeedApp/Models/NewsLetterModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getG1Feed()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 9ba6c02a3debd55f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsLetterFeedApp.Model.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 57e36e3b22a90fc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.Model.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 15389d2879cd2388"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 5b9d0a688710569a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 15389d2879cd2388"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "814EAAE3-D003-417D-9416-63F25EF6D1C7 - 5b9d0a688710569a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterModel.getG1Feed() async throws -&gt; ()"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Models/NewsLetterModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A11AB8D1-8EA5-47EC-BAE3-15AE2B9F37F2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsLetterFeedApp/Service/NewsLetterService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "fetchData(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A11AB8D1-8EA5-47EC-BAE3-15AE2B9F37F2 - a7a197ee50cdd78c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterService.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Swift.String) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Service/NewsLetterService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "A11AB8D1-8EA5-47EC-BAE3-15AE2B9F37F2 - a7a197ee50cdd78c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NewsLetterFeedApp.NewsLetterService.fetchData&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(from: Swift.String) async throws -&gt; &#x3c4;_0_0"
+                  moduleName = "NewsLetterFeedApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matheushm/Documents/Treinamentos/Cursos/swiftUi/portfolio-desafio/mobile/NewsLetterFeedApp/NewsLetterFeedApp/Service/NewsLetterService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "165">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var model: NewsLetterModel
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem { Label("Home", systemImage: "house") }
-            AgroView()
-                .tabItem { Label("Agro", systemImage: "leaf") }
-            MenuView()
-                .tabItem { Label("Opções", systemImage: "menucard") }
+        VStack {
+            List {
+                ForEach(model.newsLetter) { news in
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(news.content?.title ?? "")
+                            Text(news.content?.summary ?? "")
+                        }
+                        Spacer()
+                    }
+                    .contentShape(Rectangle())
+                }
+            }.task {
+                do {
+                    try await model.getG1Feed()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         }
     }
 }
