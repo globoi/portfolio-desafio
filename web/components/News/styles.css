@@ -1,0 +1,222 @@
+.article__container {
+  --primary-color: #c4170c;
+  --secondary-color: #33333c;
+  --font-terciary-color: #a3a3a3;
+  --border-color: #eaeaeaf3;
+  --bg-color-light: #f9f9f9;
+  --image-border-radius: 12px;
+  --ad-color: #ffaa00;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
+    sans-serif;
+  background-color: var(--bg-color-light);
+}
+
+.article__list {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__title {
+  color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.article__image {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 70px;
+  padding-right: 30px;
+  display: flex;
+}
+.article__image--wrapper {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.article__image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: var(--image-border-radius);
+  box-sizing: border-box;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article__item {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  align-items: start;
+  list-style-type: none;
+  border-bottom: solid 1px var(--border-color);
+  height: min-content;
+}
+
+.article__chapeu {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.article__chapeu--ad {
+  color: white;
+  text-wrap: nowrap;
+  font-weight: 700;
+  padding: 0.4rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: var(--ad-color);
+  text-decoration: none;
+  width: max-content;
+}
+
+.article__date {
+  font-size: 0.9rem;
+  color: var(--font-terciary-color);
+  font-weight: 400;
+}
+
+.article__button {
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.article__button:hover {
+  background-color: #b3160b;
+}
+
+.article__text {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.article__text a {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.article__text--wrapper {
+  font-size: 0.7rem;
+  color: var(--font-terciary-color);
+  display: flex;
+  gap: 10px;
+}
+
+.article__video--overlay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 20px;
+  border-radius: var(--image-border-radius);
+}
+
+.article__video--overlay svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--primary-color);
+}
+
+.article__video--overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.article__video--overlay:hover svg {
+  fill: var(--primary-color);
+}
+
+.article__video--overlay span {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.article__video--button {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.play__button {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .article__item {
+    background-color: white;
+    /* border: 1px solid var(--border-color); */
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    border-radius: var(--image-border-radius);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+  .article__image {
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .article__text {
+    padding-bottom: 0;
+  }
+  .article__text--wrapper {
+    font-size: 0.8rem;
+  }
+  .article__chapeu {
+    font-size: 0.8rem;
+  }
+  .article__date {
+    font-size: 0.8rem;
+  }
+  .article__title {
+    font-size: 1.2rem;
+  }
+  .article__button {
+    font-size: 14px;
+  }
+  .article__video--overlay span {
+    font-size: 0.8rem;
+  }
+}
