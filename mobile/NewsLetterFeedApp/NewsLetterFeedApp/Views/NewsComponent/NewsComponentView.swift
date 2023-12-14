@@ -6,52 +6,39 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct NewsComponentView: View {
     var chapeu: String
     var title: String
-    var imageURL: URL
+    var imageURL: String?
     var metadata: String
     var summary: String
-
+    
+    let imageView = SDAnimatedImageView()
+    
     var body: some View {
         VStack {
             Text(chapeu)
                 .font(.caption)
                 .padding()
-
+            
             Text(title)
                 .font(.title2)
-                .padding(.bottom)
-
-            AsyncImage(url: imageURL) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                case .success(let image):
-                    image
+            if let imageURL = URL(string: imageURL ?? ""){
+                VStack {
+                    WebImage(url: imageURL)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 200)
-                case .failure:
-                    Image(systemName: "photo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 200)
-                @unknown default:
-                    fatalError()
+                        .scaledToFit()
+                        .frame(width: 308, height: 198)
                 }
             }
-            .padding()
-
             Text(metadata)
                 .font(.caption)
-                .padding()
-
+                .padding(.bottom)
+            
             Text(summary)
                 .font(.body)
-                .padding()
-            
             Spacer()
         }
     }

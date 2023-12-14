@@ -28,7 +28,7 @@ struct NewsLetter: Decodable, Identifiable {
 
 struct NewsLetterContent: Decodable {
     var chapeu: ContentLabel?
-    var image: ImageUrl?
+    var image: Sizes?
     var summary: String?
     var title: String?
     var url: String?
@@ -38,6 +38,16 @@ struct ContentLabel: Decodable {
     var label: String?
 }
 
-struct ImageUrl: Decodable {
+struct Sizes: Decodable {
+    var sizes: ImageSizes
+}
+
+struct ImageSizes: Decodable {
+    var L: ImgProperties
+}
+
+struct ImgProperties: Decodable {
+    var height: Int?
     var url: String?
+    var widt: Int?
 }
