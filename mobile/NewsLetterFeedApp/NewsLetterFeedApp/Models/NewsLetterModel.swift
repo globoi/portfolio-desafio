@@ -11,6 +11,7 @@ import Foundation
 class NewsLetterModel: ObservableObject {
     
     @Published var newsLetter: [NewsLetter] = []
+
     let newsLetterService: NewsLetterService
     
     init(newsLetterService: NewsLetterService) {
@@ -19,6 +20,14 @@ class NewsLetterModel: ObservableObject {
     
     func getG1Feed() async throws {
         let response: NewsLetterResponse = try await newsLetterService.getG1NewsLetter()
+        
+        if let items = response.feed?.falkor?.items {
+            self.newsLetter = filterNewsLettersByType(items)
+        }
+    }
+    
+    func getAgroFeed() async throws {
+        let response: NewsLetterResponse = try await newsLetterService.getAgroNewsLetter()
         
         if let items = response.feed?.falkor?.items {
             self.newsLetter = filterNewsLettersByType(items)

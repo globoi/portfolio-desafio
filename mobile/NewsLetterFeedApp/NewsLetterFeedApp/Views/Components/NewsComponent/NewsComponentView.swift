@@ -25,6 +25,9 @@ struct NewsComponentView: View {
             
             Text(title)
                 .font(.title2)
+                .navigationBarTitleDisplayMode(.inline)
+                .foregroundColor(Color.fromHex(Constants.backgroundColor))
+                .bold()
             if let imageURL = URL(string: imageURL ?? ""){
                 VStack {
                     WebImage(url: imageURL)
@@ -39,6 +42,8 @@ struct NewsComponentView: View {
             
             Text(summary)
                 .font(.body)
+                .navigationBarTitleDisplayMode(.inline)
+                .foregroundColor(Color.fromHex(Constants.lightGray))
             Spacer()
         }
     }
