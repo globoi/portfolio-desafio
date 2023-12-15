@@ -1,11 +1,11 @@
 platform :ios, '17.0.1'
 
 target 'NewsLetterFeedApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
   pod 'SDWebImageSwiftUI'
-  
   use_frameworks!
+end
 
-  # Pods for NewsLetterFeedApp
-
+target "NewsLetterFeedAppTests" do
+  use_frameworks!
+  pod 'iOSSnapshotTestCase'
 end

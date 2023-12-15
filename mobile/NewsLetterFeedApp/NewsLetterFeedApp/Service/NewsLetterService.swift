@@ -7,7 +7,11 @@
 
 import Foundation
 
-class NewsLetterService {        
+protocol NewsLetterServiceProtocol {
+    func fetchData<T: Decodable>(from endpoint: String) async throws -> T
+}
+
+class NewsLetterService: NewsLetterServiceProtocol {        
     func fetchData<T: Decodable>(from endpoint: String) async throws -> T {
         guard let url = URL(string: endpoint) else {
             throw NewsLetterServiceError.invalidURL

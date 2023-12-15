@@ -7,14 +7,20 @@
 
 import Foundation
 
+protocol NewsLetterModelProtocol {
+    var newsLetter: [NewsLetter] { get }
+    func getG1Feed() async throws
+    func getAgroFeed() async throws
+}
+
 @MainActor
 class NewsLetterModel: ObservableObject {
     
     @Published var newsLetter: [NewsLetter] = []
 
-    let newsLetterService: NewsLetterService
+    let newsLetterService: NewsLetterServiceProtocol
     
-    init(newsLetterService: NewsLetterService) {
+    init(newsLetterService: NewsLetterServiceProtocol) {
         self.newsLetterService = newsLetterService
     }
     
