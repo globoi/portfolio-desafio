@@ -11,11 +11,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             HomeView()
-                .tabItem { Label("Home", systemImage: "house.fill")}
+                .tabItem { Label(Constants.homeTabItem, systemImage: Constants.homeImage)}
             AgroView()
-                .tabItem { Label("Agro", systemImage: "leaf.fill") }
+                .tabItem { Label(Constants.agroTabItem, systemImage: Constants.agroImage) }
             MenuView(menuItems: Menu.menuItems)
-                .tabItem { Label("Home", systemImage: "menucard.fill") }
+                .tabItem { Label(Constants.menuTabItem, systemImage: Constants.menuImage) }
         }
         .tint(Color.fromHex(Constants.backgroundColor))
     }

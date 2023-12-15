@@ -15,6 +15,13 @@ struct HomeView: View {
         VStack {
             NavigationView {
                 NewsListView(selectedNews: $selectedNews, news: model.newsLetter)
+                    .refreshable {
+                        do {
+                            try await model.getG1Feed()
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                    }
                     .task {
                         do {
                             try await model.getG1Feed()

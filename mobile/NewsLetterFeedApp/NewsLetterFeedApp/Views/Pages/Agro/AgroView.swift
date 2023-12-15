@@ -15,6 +15,13 @@ struct AgroView: View {
            VStack {
                NavigationView {
                    NewsListView(selectedNews: $selectedNews, news: model.newsLetter)
+                       .refreshable {
+                           do {
+                               try await model.getAgroFeed()
+                           } catch {
+                               print(error.localizedDescription)
+                           }
+                       }
                        .task {
                            do {
                                try await model.getAgroFeed()

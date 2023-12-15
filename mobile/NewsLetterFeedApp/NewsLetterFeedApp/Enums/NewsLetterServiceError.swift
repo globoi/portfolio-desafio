@@ -16,13 +16,13 @@ enum NewsLetterServiceError: Error {
     var localizedDescription: String {
         switch self {
         case .invalidURL:
-            return "URL inválida."
+            return Constants.invalidURL
         case .invalidResponse:
-            return "Resposta inválida do servidor."
+            return Constants.invalidResponse
         case .dataParsingError:
-            return "Erro ao analisar os dados da resposta."
+            return Constants.dataParsingError
         case .requestFailed(let underlyingError):
-            return "Erro na requisição: \(underlyingError.localizedDescription)"
+            return "\(Constants.requestFailed) \(underlyingError.localizedDescription)"
         }
     }
 }
