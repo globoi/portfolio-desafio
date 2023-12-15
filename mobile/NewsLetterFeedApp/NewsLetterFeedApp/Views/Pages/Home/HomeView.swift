@@ -14,38 +14,16 @@ struct HomeView: View {
     var body: some View {
         VStack {
             NavigationView {
-                List {
-                    ForEach(model.newsLetter) { news in
-                        NavigationLink(destination: WebViewComponent(urlString: news.content?.url ?? ""),
-                                       tag: news,
-                                       selection: $selectedNews) {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    NewsComponentView(chapeu: news.content?.chapeu?.label ?? "",
-                                                      title: news.content?.title ?? "",
-                                                      imageURL: news.content?.image?.sizes.L.url,
-                                                      metadata: news.metadata ?? "",
-                                                      summary: news.content?.summary ?? "")
-                                }
-                                Spacer()
-                            }
-                            .contentShape(Rectangle())
-                        }
-                        .onTapGesture {
-                            selectedNews = news
+                NewsListView(selectedNews: $selectedNews, news: model.newsLetter)
+                    .task {
+                        do {
+                            try await model.getG1Feed()
+                        } catch {
+                            print(error.localizedDescription)
                         }
                     }
-                }
-                .task {
-                    do {
-                        try await model.getG1Feed()
-                    } catch {
-                        print(error.localizedDescription)
-                    }
-                }
-                .customNavigationBar(title: "G1", backgroundColor: Color.fromHex(Constants.backgroundColor), titleColor: .white)
+                    .customNavigationBar(title: "G1", backgroundColor: Color.fromHex(Constants.backgroundColor), titleColor: .white)
             }
         }
     }
 }
-

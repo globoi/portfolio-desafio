@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AgroView: View {
     @EnvironmentObject private var model: NewsLetterModel
-       @State private var selectedNews: NewsLetter?
+    @State private var selectedNews: NewsLetter?
        
        var body: some View {
            VStack {
