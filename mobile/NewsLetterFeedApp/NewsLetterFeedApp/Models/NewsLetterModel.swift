@@ -19,7 +19,7 @@ class NewsLetterModel: ObservableObject {
     }
     
     func getG1Feed() async throws {
-        let response: NewsLetterResponse = try await newsLetterService.getG1NewsLetter()
+        let response: NewsLetterResponse = try await newsLetterService.fetchData(from: "\(Constants.baseURL)\(Constants.g1FeedPath)")
         
         if let items = response.feed?.falkor?.items {
             self.newsLetter = filterNewsLettersByType(items)
@@ -27,7 +27,7 @@ class NewsLetterModel: ObservableObject {
     }
     
     func getAgroFeed() async throws {
-        let response: NewsLetterResponse = try await newsLetterService.getAgroNewsLetter()
+        let response: NewsLetterResponse = try await newsLetterService.fetchData(from: "\(Constants.baseURL)\(Constants.agroFeedPath)")
         
         if let items = response.feed?.falkor?.items {
             self.newsLetter = filterNewsLettersByType(items)

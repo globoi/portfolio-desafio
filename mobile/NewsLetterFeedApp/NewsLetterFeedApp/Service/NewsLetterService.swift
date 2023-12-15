@@ -21,32 +21,4 @@ class NewsLetterService {
              throw NewsLetterServiceError.requestFailed(underlyingError: error)
          }
     }
-    
-    func getG1NewsLetter() async throws -> NewsLetterResponse {
-        guard let url = URL(string: "\(Constants.baseURL)\(Constants.g1FeedPath)") else {
-            throw NewsLetterServiceError.invalidURL
-        }
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            return try JSONDecoder().decode(NewsLetterResponse.self, from: data)
-        } catch {
-            print(error)
-            throw NewsLetterServiceError.requestFailed(underlyingError: error)
-        }
-    }
-    
-    func getAgroNewsLetter() async throws -> NewsLetterResponse {
-        guard let url = URL(string: "\(Constants.baseURL)\(Constants.agroFeedPath)") else {
-            throw NewsLetterServiceError.invalidURL
-        }
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            return try JSONDecoder().decode(NewsLetterResponse.self, from: data)
-        } catch {
-            print(error)
-            throw NewsLetterServiceError.requestFailed(underlyingError: error)
-        }
-    }
 }

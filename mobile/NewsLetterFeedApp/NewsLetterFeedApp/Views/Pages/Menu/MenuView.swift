@@ -10,14 +10,21 @@ import SwiftUI
 struct MenuView: View {
     let menuItems: [MenuItem]
 
-     var body: some View {
-         NavigationView {
-             List(menuItems) { menuItem in
-                 NavigationLink(destination: WebViewComponent(urlString: menuItem.url)) {
-                     Text(menuItem.title)
-                 }
-             }
-             .navigationTitle("Menu")
-         }
-     }
+    var body: some View {
+        NavigationView {
+            VStack {
+                Spacer()
+                List(menuItems) { menuItem in
+                    NavigationLink(destination: WebViewComponent(urlString: menuItem.url)) {
+                        Text(menuItem.title)
+                            .foregroundColor(Color.fromHex(Constants.backgroundColor))
+                            .bold()
+                    }
+                }
+                .listStyle(PlainListStyle())
+                Spacer()
+            }
+        }
+    }
 }
+
