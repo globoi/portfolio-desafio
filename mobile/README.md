@@ -3,11 +3,15 @@
 ## Matheus Henrique Mendes Alexandre
 **Desafio Mobile**
 
-NewsLetterFeedApp foi construído seguindo as orientações previstas neste Readme. O app exibe um feed contendo uma lista de notícias, distribuídas em duas abas principais (Home e Agro). 
+NewsLetterFeedApp foi construído seguindo as orientações previstas neste Readme. O app exibe um feed contendo uma lista de notícias, distribuídas em duas abas principais (Home e Agro).
 
 Dos requisitos apontados, a paginação do Feed se mostrou desafiador no contexto de swiftUI, não tendo sido possível sua implementação na estimativa de entrega inicial. 
 
 ## Decisões e porquês
+
+### Cache de dados
+
+A aplicação conta com cache dos dados para tornar a experiência do usuário mais fluida.
 
 ### User Interface Tool kit
 
