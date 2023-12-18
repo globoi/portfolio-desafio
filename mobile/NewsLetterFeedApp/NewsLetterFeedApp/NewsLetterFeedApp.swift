@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct NewsLetterFeedAppApp: App {
+struct NewsLetterFeedApp: App {
     private var service = NewsLetterService()
     
     var body: some Scene {
