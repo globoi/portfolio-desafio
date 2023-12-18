@@ -14,9 +14,10 @@ protocol NewsLetterModelProtocol {
 }
 
 @MainActor
-class NewsLetterModel: ObservableObject {
+final class NewsLetterModel: ObservableObject {
     
     @Published var newsLetter: [NewsLetter] = []
+    @Published var loading: Bool = true
 
     let newsLetterService: NewsLetterServiceProtocol
     
@@ -29,6 +30,7 @@ class NewsLetterModel: ObservableObject {
         
         if let items = response.feed?.falkor?.items {
             self.newsLetter = filterNewsLettersByType(items)
+            self.loading = false
         }
     }
     
@@ -37,6 +39,7 @@ class NewsLetterModel: ObservableObject {
         
         if let items = response.feed?.falkor?.items {
             self.newsLetter = filterNewsLettersByType(items)
+            self.loading = false
         }
     }
     

@@ -29,8 +29,10 @@ struct HomeView: View {
                             print(error.localizedDescription)
                         }
                     }
-                    .customNavigationBar(title: "G1", backgroundColor: Color.fromHex(Constants.backgroundColor), titleColor: .white)
+                    .customNavigationBar(title: Constants.navBarTitle, backgroundColor: Color.fromHex(Colors.backgroundColor), titleColor: .white)
             }
         }
     }
 }
+
+

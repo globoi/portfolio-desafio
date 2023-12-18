@@ -17,7 +17,7 @@ struct MenuView: View {
                 List(menuItems) { menuItem in
                     NavigationLink(destination: WebViewComponent(urlString: menuItem.url)) {
                         Text(menuItem.title)
-                            .foregroundColor(Color.fromHex(Constants.backgroundColor))
+                            .foregroundColor(Color.fromHex(Colors.backgroundColor))
                             .bold()
                     }
                 }

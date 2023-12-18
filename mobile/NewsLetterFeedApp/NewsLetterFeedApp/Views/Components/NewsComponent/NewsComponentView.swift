@@ -14,9 +14,7 @@ struct NewsComponentView: View {
     var imageURL: String?
     var metadata: String
     var summary: String
-    
-    let imageView = SDAnimatedImageView()
-    
+        
     var body: some View {
         VStack {
             Text(chapeu)
@@ -26,7 +24,7 @@ struct NewsComponentView: View {
             Text(title)
                 .font(.title2)
                 .navigationBarTitleDisplayMode(.inline)
-                .foregroundColor(Color.fromHex(Constants.backgroundColor))
+                .foregroundColor(Color.fromHex(Colors.backgroundColor))
                 .bold()
             if let imageURL = URL(string: imageURL ?? ""){
                 VStack {
@@ -43,7 +41,7 @@ struct NewsComponentView: View {
             Text(summary)
                 .font(.body)
                 .navigationBarTitleDisplayMode(.inline)
-                .foregroundColor(Color.fromHex(Constants.lightGray))
+                .foregroundColor(Color.fromHex(Colors.lightGray))
             Spacer()
         }
     }

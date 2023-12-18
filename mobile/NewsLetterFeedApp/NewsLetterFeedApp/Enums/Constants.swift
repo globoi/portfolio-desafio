@@ -11,8 +11,6 @@ enum Constants {
     static let baseURL = "https://native-leon.globo.com"
     static let g1FeedPath = "/feed/g1"
     static let agroFeedPath = "/feed/https://g1.globo.com/economia/agronegocios"
-    static let backgroundColor = "C4170C"
-    static let lightGray = "555555"
     static let invalidURL = "URL inválida."
     static let invalidResponse = "Resposta inválida do servidor."
     static let dataParsingError = "Erro ao analisar os dados da resposta."
@@ -23,6 +21,7 @@ enum Constants {
     static let agroImage = "leaf.fill"
     static let homeImage = "house.fill"
     static let menuImage = "menucard.fill"
+    static let navBarTitle = "G1"
 
     static func getFullStringPath(forPath path: String) -> String {
         return "\(baseURL)\(path)"

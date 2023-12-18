@@ -17,7 +17,7 @@ struct ContentView: View {
             MenuView(menuItems: Menu.menuItems)
                 .tabItem { Label(Constants.menuTabItem, systemImage: Constants.menuImage) }
         }
-        .tint(Color.fromHex(Constants.backgroundColor))
+        .tint(Color.fromHex(Colors.backgroundColor))
     }
 }
 
